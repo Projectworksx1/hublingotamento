@@ -1,0 +1,606 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0f0f14;
+}
+
+/*------- LOGO ----------*/
+
+#navlogo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#navlogo p {
+    display: flex;
+    font-size: large;
+    font-weight: 600;
+    gap: 5px;
+    color: white;
+}
+
+#navlogo span {
+    color: rgb(102, 170, 1);
+}
+
+#navlogo img {
+    width: 50px;
+}
+
+/* ---------- LISTA ------------*/
+
+#navlinks {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    align-items: center;
+}
+
+#navlinks a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+#navlinks a:hover {
+    border-bottom: 3px solid rgb(102, 170, 1);
+}
+
+#navlinks a:active {
+    border-bottom: 3px solid rgb(102, 170, 1);
+}
+
+/* ---------- MAIN --------- */
+
+
+/* -------------- INICIO ------------- */
+
+#homecontent {
+    background-color: rgb(224, 224, 224);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#hometitle {
+    font-size: 30px;
+    padding: 20px;
+}
+
+#hometext {
+    display: flex;
+    flex-direction: column;
+}
+
+#hometitle span{
+    display: flex;
+    color: rgb(102, 170, 1);
+}
+
+#homedescription {
+    font-weight: 600;
+    padding: 20px;
+    width: 500px;
+}
+
+#homedescription span{
+    color: rgb(102, 170, 1);
+}
+
+#homeimg img {
+    margin-top: 35px;
+    margin-right: 60px;
+    border-radius: 8px;
+    width: 450px;
+}
+
+#homeall {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+#homesections {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+#homesections p {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+#homegrid {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(102, 170, 1);
+    align-items: center;
+    transition: 0.3s;
+    gap: 20px;
+    text-align: center;
+}
+
+#homegrid p {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#panelaemote {
+    width: 60px;
+}
+
+#homegrid:hover {
+    background-color: rgb(85, 141, 0);
+}
+
+#lingotamentoemote {
+    width: 40px;
+}
+
+#despachoemote {
+    width: 30px;
+}
+
+
+/* ------------------- GVS ------------------*/
+
+#gvsall {
+    display: flex;
+    padding: 70px;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 20px 20px 20px;
+}
+
+#gvs {
+    background-color: rgb(236, 236, 236);
+}
+
+
+#gvslogo {
+    font-size: 90px;
+    color: rgb(0, 22, 0);
+}
+
+#gvstitle {
+   font-size: 35px;
+   letter-spacing: 1px;
+}
+
+#gvstitle span {
+    display: flex;
+    color: rgb(102, 170, 1);
+}
+
+#gvsimg img{
+    margin-top: 35px;
+    margin-right: 60px;
+    border-radius: 8px;
+    width: 600px;
+}
+
+#gvsdescription {
+    width: 410px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+#gvsbutton {
+    margin-top: 26px;
+    background-color: rgb(51, 85, 0);
+    border: none;
+    border-radius: 8px;
+    font-size: large;
+    padding: 10px;
+    width: 410px;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+#gvsbutton:hover {
+    background-color: rgb(71, 119, 0);
+}
+
+#gvsgridall {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 60px;
+    justify-content: center;
+}
+
+#gvsgridtitle {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#gvsgrid {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+.gvsitem {
+    border: 1px none;
+    background-color: rgb(236, 236, 236);
+    padding: 70px;
+    border-radius: 8px;
+}
+
+#gvspositivo {
+    text-align: center;
+    width: 300px;
+    font-weight: 600;
+}
+
+#gvspositivotitle {
+    font-weight: 600;
+}
+
+#gvspositivoimg {
+    width: 70px;
+}
+
+#gvsoperatorimg {
+    width: 100px;
+}
+
+#gvsoperatortitle {
+    font-weight: 600;
+}
+
+#gvsgraficimg {
+    width: 100px;
+}
+
+#gvsgrafictitle {
+    font-weight: 600;
+}
+
+#gvshandsimg {
+    width: 130px;
+}
+
+#gvshandstitle {
+    font-weight: 600;
+}
+
+#gvsjoin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    padding: 30px;
+    background-color: rgb(238, 237, 237);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#gvsjointitle {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#gvsjoin span {
+    color: rgb(37, 61, 0);
+    font-size: 27px;
+}
+
+#gvsjoin p {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* ---------------- PONTOS DE URGENCIA E EMERGENCIA ------------------- */
+
+#pointsofemergency {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+#emergency {
+    padding: 10px;
+}
+
+#emergencytitle {
+    padding: 10px;
+}
+
+#emergencytitle h1{
+    display: inline-block;
+    color: rgb(11, 19, 0);
+    font-size: 50px;
+    border-bottom: 3px solid rgb(216, 216, 216);
+}
+
+#emergencytitle span {
+    color: rgb(37, 61, 0);
+}
+
+#emergencytitle p {
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+#emergencyarea {
+    display: flex;
+    border: none;
+    padding: 10px;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 8px;
+}
+
+#emergencymap {
+    padding: 20px;
+}
+
+#emergencymap img {
+    width:800px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#emergencymap img:active {
+    width: 900px;
+}
+
+#emergencylist {
+    display: flex;
+    margin-top: 140px;
+    flex-direction: column;
+    border: none;
+    border-radius: 8px;
+    height: 560px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#emergencylist h1 {
+    border-bottom: 2px solid rgb(226, 225, 225);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#emelist {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 23px;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+#imelist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+#imelist p{
+    background-color: green;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 600;
+    padding: 5px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#emelist p {
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#emelists {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#urgencybtn {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 190px;
+    text-align: center;
+    background-color: rgb(51, 85, 0);
+    width: 300px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#urgencybtn:hover {
+    background-color: rgb(102, 170, 1);;
+}
+
+/* ------------- CALENDARIO --------------- */
+
+.controles{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+}
+
+.calendario{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:6px;
+max-width:600px;
+}
+
+.dia{
+padding:14px;
+text-align:center;
+border:1px solid #ccc;
+border-radius:6px;
+font-weight:bold;
+}
+
+.trabalho{
+background:white;
+}
+
+.folga{
+background:#bdbdbd;
+}
+
+.hoje{
+background:green;
+color:white;
+border:none;
+}
+
+.statusTurno{
+margin-bottom:15px;
+padding:10px;
+background:#ffffff;
+border-radius:6px;
+border:1px solid #ccc;
+font-weight:bold;
+max-width:600px;
+}
+
+.legenda{
+display:flex;
+gap:20px;
+margin-top:15px;
+align-items:center;
+}
+
+.legenda-item{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+}
+
+.cor{
+width:20px;
+height:20px;
+border-radius:4px;
+border:1px solid #999;
+}
+
+.cor.trabalho{
+background:white;
+}
+
+.cor.folga{
+background:#bdbdbd;
+}
+
+.cor.hoje{
+background:#d32f2f;
+}
+
+.statusTurno{
+margin-bottom:15px;
+padding:12px;
+border-radius:6px;
+font-weight:bold;
+max-width:600px;
+font-size:16px;
+}
+
+.statusTrabalho{
+background:#2e7d32;
+color:white;
+}
+
+.statusFolga{
+background:#616161;
+color:white;
+}
+
+.painelTurno{
+max-width:600px;
+margin-bottom:20px;
+}
+
+.dataHoje{
+font-size:14px;
+margin-bottom:6px;
+color:#555;
+}
+
+.statusTurno{
+padding:12px;
+border-radius:6px;
+font-weight:bold;
+font-size:16px;
+}
+
+.statusTrabalho{
+background:#2e7d32;
+color:white;
+}
+
+.statusFolga{
+background:#616161;
+color:white;
+}
+
+#calendar h1 {
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#calendar p {
+    padding: 10px;
+    margin-left: 15px;
+    width: 700px;
+}
+
+#calendarios {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#turncalendar {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    width: 650px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
