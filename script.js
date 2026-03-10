@@ -103,3 +103,60 @@ letraSelect.addEventListener("change",gerarCalendario)
 mesInput.addEventListener("change",gerarCalendario)
 
 gerarCalendario()
+
+async function carregarClima(){
+
+let url="https://api.open-meteo.com/v1/forecast?latitude=-19.4683&longitude=-42.5364&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,relative_humidity_2m&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max&timezone=auto"
+
+let resposta = await fetch(url)
+
+let dados = await resposta.json()
+
+let atual = dados.current
+let diaria = dados.daily
+
+let climaAtual = document.getElementById("climaAtual")
+
+climaAtual.innerHTML =
+
+`
+🌡️ Temperatura: ${atual.temperature_2m}°C <br>
+🔥 Sensação térmica: ${atual.apparent_temperature}°C <br>
+💨 Vento: ${atual.wind_speed_10m} km/h <br>
+💧 Umidade: ${atual.relative_humidity_2m}% <br>
+🌧️ Chance de chuva: ${diaria.precipitation_probability_max[0]}% <br>
+⬆️ Máx: ${diaria.temperature_2m_max[0]}°C <br>
+⬇️ Mín: ${diaria.temperature_2m_min[0]}°C <br>
+🌅 Nascer do sol: ${diaria.sunrise[0].split("T")[1]} <br>
+🌇 Pôr do sol: ${diaria.sunset[0].split("T")[1]}
+`
+
+let previsao = document.getElementById("previsao")
+
+previsao.innerHTML=""
+
+for(let i=1;i<6;i++){
+
+let data = diaria.time[i]
+
+let max = diaria.temperature_2m_max[i]
+
+let min = diaria.temperature_2m_min[i]
+
+let chuva = diaria.precipitation_probability_max[i]
+
+let linha=document.createElement("div")
+
+linha.innerHTML=`
+📅 ${data} — ⬆️${max}° ⬇️${min}° 🌧️${chuva}%
+`
+
+previsao.appendChild(linha)
+
+}
+
+}
+
+carregarClima()
+
+setInterval(carregarClima,600000)
