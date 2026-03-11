@@ -1,460 +1,441 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
 }
 
-header {
-    position: sticky;
-    z-index: 1;
-    top: 0;
+img{
+max-width:100%;
+height:auto;
 }
 
-#navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: #0f0f14;
+header{
+position:sticky;
+z-index:1;
+top:0;
 }
 
-/*------- LOGO ----------*/
-
-#navlogo {
-    display: flex;
-    align-items: center;
-    gap: 3px;
+#navbar{
+display:flex;
+justify-content:space-around;
+background-color:#0f0f14;
+flex-wrap:wrap;
+padding:10px;
 }
 
-#navlogo p {
-    display: flex;
-    font-size: large;
-    font-weight: 600;
-    gap: 5px;
-    color: white;
+#navlogo{
+display:flex;
+align-items:center;
+gap:3px;
 }
 
-#navlogo span {
-    color: rgb(102, 170, 1);
+#navlogo p{
+display:flex;
+font-size:large;
+font-weight:600;
+gap:5px;
+color:white;
 }
 
-#navlogo img {
-    width: 50px;
+#navlogo span{
+color:rgb(102,170,1);
 }
 
-/* ---------- LISTA ------------*/
-
-#navlinks {
-    display: flex;
-    gap: 70px;
-    list-style: none;
-    align-items: center;
+#navlogo img{
+width:50px;
 }
 
-#navlinks a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.2s;
+#navlinks{
+display:flex;
+gap:70px;
+list-style:none;
+align-items:center;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-#navlinks a:hover {
-    border-bottom: 3px solid rgb(102, 170, 1);
+#navlinks a{
+color:white;
+text-decoration:none;
+letter-spacing:2px;
+transition:0.2s;
 }
 
-#navlinks a:active {
-    border-bottom: 3px solid rgb(102, 170, 1);
+#navlinks a:hover{
+border-bottom:3px solid rgb(102,170,1);
 }
 
-/* ---------- MAIN --------- */
-
-
-/* -------------- INICIO ------------- */
-
-#homecontent {
-    background-color: rgb(224, 224, 224);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+#navlinks a:active{
+border-bottom:3px solid rgb(102,170,1);
 }
 
-#hometitle {
-    font-size: 30px;
-    padding: 20px;
+#homecontent{
+background-color:rgb(224,224,224);
+box-shadow:rgba(0,0,0,0.25)0px 54px 55px,rgba(0,0,0,0.12)0px -12px 30px,rgba(0,0,0,0.12)0px 4px 6px,rgba(0,0,0,0.17)0px 12px 13px,rgba(0,0,0,0.09)0px -3px 5px;
 }
 
-#hometext {
-    display: flex;
-    flex-direction: column;
+#hometitle{
+font-size:30px;
+padding:20px;
+}
+
+#hometext{
+display:flex;
+flex-direction:column;
 }
 
 #hometitle span{
-    display: flex;
-    color: rgb(102, 170, 1);
+display:flex;
+color:rgb(102,170,1);
 }
 
-#homedescription {
-    font-weight: 600;
-    padding: 20px;
-    width: 500px;
+#homedescription{
+font-weight:600;
+padding:20px;
+max-width:500px;
 }
 
 #homedescription span{
-    color: rgb(102, 170, 1);
+color:rgb(102,170,1);
 }
 
-#homeimg img {
-    margin-top: 35px;
-    margin-right: 60px;
-    border-radius: 8px;
-    width: 450px;
+#homeimg img{
+margin-top:35px;
+margin-right:60px;
+border-radius:8px;
+width:450px;
+max-width:100%;
 }
 
-#homeall {
-    margin: 20px 20px 20px 20px;
-    display: flex;
-    padding: 30px;
-    justify-content: space-around;
+#homeall{
+margin:20px;
+display:flex;
+padding:30px;
+justify-content:space-around;
+flex-wrap:wrap;
+align-items:center;
 }
 
-#homesections {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-    cursor: pointer;
+#homesections{
+display:flex;
+justify-content:center;
+padding:20px;
+gap:20px;
+cursor:pointer;
+flex-wrap:wrap;
 }
 
-#homesections p {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
+#homesections p{
+display:flex;
+align-items:center;
+font-size:30px;
 }
 
-#homegrid {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    width: 300px;
-    border-radius: 8px;
-    display: flex;
-    background-color: rgb(102, 170, 1);
-    align-items: center;
-    transition: 0.3s;
-    gap: 20px;
-    text-align: center;
+#homegrid{
+display:flex;
+justify-content:space-between;
+padding:10px;
+width:300px;
+border-radius:8px;
+background-color:rgb(102,170,1);
+align-items:center;
+transition:0.3s;
+gap:20px;
+text-align:center;
 }
 
-#homegrid p {
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
+#homegrid p{
+font-size:20px;
+color:white;
+font-weight:600;
 }
 
-#panelaemote {
-    width: 60px;
+#panelaemote{
+width:60px;
 }
 
-#homegrid:hover {
-    background-color: rgb(85, 141, 0);
+#homegrid:hover{
+background-color:rgb(85,141,0);
 }
 
-#lingotamentoemote {
-    width: 40px;
+#lingotamentoemote{
+width:40px;
 }
 
-#despachoemote {
-    width: 30px;
+#despachoemote{
+width:30px;
 }
 
-
-/* ------------------- GVS ------------------*/
-
-#gvsall {
-    display: flex;
-    padding: 70px;
-    justify-content: space-around;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin: 20px 20px 20px;
+#gvsall{
+display:flex;
+padding:70px;
+justify-content:space-around;
+box-shadow:rgba(0,0,0,0.24)0px 3px 8px;
+margin:20px;
+flex-wrap:wrap;
+align-items:center;
 }
 
-#gvs {
-    background-color: rgb(236, 236, 236);
+#gvs{
+background-color:rgb(236,236,236);
 }
 
-
-#gvslogo {
-    font-size: 90px;
-    color: rgb(0, 22, 0);
+#gvslogo{
+font-size:90px;
+color:rgb(0,22,0);
 }
 
-#gvstitle {
-   font-size: 35px;
-   letter-spacing: 1px;
+#gvstitle{
+font-size:35px;
+letter-spacing:1px;
 }
 
-#gvstitle span {
-    display: flex;
-    color: rgb(102, 170, 1);
+#gvstitle span{
+display:flex;
+color:rgb(102,170,1);
 }
 
 #gvsimg img{
-    margin-top: 35px;
-    margin-right: 60px;
-    border-radius: 8px;
-    width: 600px;
+margin-top:35px;
+margin-right:60px;
+border-radius:8px;
+width:600px;
+max-width:100%;
 }
 
-#gvsdescription {
-    width: 410px;
-    margin-top: 20px;
-    letter-spacing: 1px;
+#gvsdescription{
+max-width:410px;
+margin-top:20px;
+letter-spacing:1px;
 }
 
-#gvsbutton {
-    margin-top: 26px;
-    background-color: rgb(51, 85, 0);
-    border: none;
-    border-radius: 8px;
-    font-size: large;
-    padding: 10px;
-    width: 410px;
-    color: white;
-    letter-spacing: 2px;
-    transition: 0.3s;
+#gvsbutton{
+margin-top:26px;
+background-color:rgb(51,85,0);
+border:none;
+border-radius:8px;
+font-size:large;
+padding:10px;
+width:410px;
+max-width:100%;
+color:white;
+letter-spacing:2px;
+transition:0.3s;
 }
 
-#gvsbutton:hover {
-    background-color: rgb(71, 119, 0);
+#gvsbutton:hover{
+background-color:rgb(71,119,0);
 }
 
-#gvsgridall {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    padding: 60px;
-    justify-content: center;
+#gvsgridall{
+display:flex;
+background-color:white;
+padding:60px;
+justify-content:center;
+flex-wrap:wrap;
 }
 
-#gvsgridtitle {
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 2px;
+#gvsgridtitle{
+font-size:30px;
+font-weight:400;
+letter-spacing:2px;
 }
 
-#gvsgrid {
-    display: flex;
-    gap: 20px;
-    padding: 25px;
+#gvsgrid{
+display:flex;
+gap:20px;
+padding:25px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-.gvsitem {
-    border: 1px none;
-    background-color: rgb(236, 236, 236);
-    padding: 70px;
-    border-radius: 8px;
+.gvsitem{
+background-color:rgb(236,236,236);
+padding:70px;
+border-radius:8px;
 }
 
-#gvspositivo {
-    text-align: center;
-    width: 300px;
-    font-weight: 600;
+#gvspositivo{
+text-align:center;
+width:300px;
+font-weight:600;
 }
 
-#gvspositivotitle {
-    font-weight: 600;
+#gvspositivoimg{
+width:70px;
 }
 
-#gvspositivoimg {
-    width: 70px;
+#gvsoperatorimg{
+width:100px;
 }
 
-#gvsoperatorimg {
-    width: 100px;
+#gvsgraficimg{
+width:100px;
 }
 
-#gvsoperatortitle {
-    font-weight: 600;
+#gvshandsimg{
+width:130px;
 }
 
-#gvsgraficimg {
-    width: 100px;
+#gvsjoin{
+display:flex;
+flex-direction:column;
+justify-content:center;
+margin:20px;
+padding:30px;
+background-color:rgb(238,237,237);
+box-shadow:rgba(0,0,0,0.24)0px 3px 8px;
 }
 
-#gvsgrafictitle {
-    font-weight: 600;
+#gvsjointitle{
+font-weight:400;
+letter-spacing:1px;
 }
 
-#gvshandsimg {
-    width: 130px;
+#gvsjoin span{
+color:rgb(37,61,0);
+font-size:27px;
 }
 
-#gvshandstitle {
-    font-weight: 600;
+#gvsjoin p{
+font-weight:400;
+letter-spacing:1px;
 }
 
-#gvsjoin {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 20px 20px 20px;
-    padding: 30px;
-    background-color: rgb(238, 237, 237);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+#pointsofemergency{
+display:flex;
+flex-direction:column;
+text-align:center;
+padding:10px;
 }
 
-#gvsjointitle {
-    font-weight: 400;
-    letter-spacing: 1px;
+#emergency{
+padding:10px;
 }
 
-#gvsjoin span {
-    color: rgb(37, 61, 0);
-    font-size: 27px;
-}
-
-#gvsjoin p {
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-/* ---------------- PONTOS DE URGENCIA E EMERGENCIA ------------------- */
-
-#pointsofemergency {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-}
-
-#emergency {
-    padding: 10px;
-}
-
-#emergencytitle {
-    padding: 10px;
+#emergencytitle{
+padding:10px;
 }
 
 #emergencytitle h1{
-    display: inline-block;
-    color: rgb(11, 19, 0);
-    font-size: 50px;
-    border-bottom: 3px solid rgb(216, 216, 216);
+display:inline-block;
+color:rgb(11,19,0);
+font-size:50px;
+border-bottom:3px solid rgb(216,216,216);
 }
 
-#emergencytitle span {
-    color: rgb(37, 61, 0);
+#emergencytitle span{
+color:rgb(37,61,0);
 }
 
-#emergencytitle p {
-    letter-spacing: 2px;
-    padding: 10px;
+#emergencytitle p{
+letter-spacing:2px;
+padding:10px;
 }
 
-#emergencyarea {
-    display: flex;
-    border: none;
-    padding: 10px;
-    justify-content: space-around;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 8px;
+#emergencyarea{
+display:flex;
+border:none;
+padding:10px;
+justify-content:space-around;
+box-shadow:rgba(0,0,0,0.25)0px 54px 55px,rgba(0,0,0,0.12)0px -12px 30px,rgba(0,0,0,0.12)0px 4px 6px,rgba(0,0,0,0.17)0px 12px 13px,rgba(0,0,0,0.09)0px -3px 5px;
+border-radius:8px;
+flex-wrap:wrap;
 }
 
-#emergencymap {
-    padding: 20px;
+#emergencymap{
+padding:20px;
 }
 
-#emergencymap img {
-    width:800px;
-    border-radius: 8px;
-    transition: 0.3s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+#emergencymap img{
+width:800px;
+max-width:100%;
+border-radius:8px;
+transition:0.3s;
+box-shadow:rgba(0,0,0,0.25)0px 54px 55px,rgba(0,0,0,0.12)0px -12px 30px,rgba(0,0,0,0.12)0px 4px 6px,rgba(0,0,0,0.17)0px 12px 13px,rgba(0,0,0,0.09)0px -3px 5px;
 }
 
-#emergencymap img:active {
-    width: 900px;
+#emergencylist{
+display:flex;
+margin-top:140px;
+flex-direction:column;
+border-radius:8px;
+height:auto;
+padding:20px;
+box-shadow:rgba(0,0,0,0.35)0px 5px 15px;
 }
 
-#emergencylist {
-    display: flex;
-    margin-top: 140px;
-    flex-direction: column;
-    border: none;
-    border-radius: 8px;
-    height: 560px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#emergencylist h1{
+border-bottom:2px solid rgb(226,225,225);
+font-size:25px;
+margin-bottom:10px;
 }
 
-#emergencylist h1 {
-    border-bottom: 2px solid rgb(226, 225, 225);
-    font-size: 25px;
-    margin-bottom: 10px;
+#emelist{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:23px;
+flex-direction:column;
+font-size:16px;
 }
 
-#emelist {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 23px;
-    flex-direction: column;
-    font-size: 16px;
+#imelist{
+display:flex;
+flex-direction:column;
+gap:10px;
 }
-
-#imelist {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
 
 #imelist p{
-    background-color: green;
-    border-radius: 20px;
-    font-size: large;
-    font-weight: 600;
-    padding: 5px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+background-color:green;
+border-radius:20px;
+font-size:large;
+font-weight:600;
+padding:5px;
+color:white;
+box-shadow:rgba(0,0,0,0.24)0px 3px 8px;
 }
 
-#emelist p {
-    letter-spacing: 1px;
-    font-weight: 600;
+#emelist p{
+letter-spacing:1px;
+font-weight:600;
 }
 
-#emelists {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+#emelists{
+display:flex;
+gap:20px;
+align-items:center;
+padding:20px;
+flex-wrap:wrap;
 }
 
-#urgencybtn {
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 190px;
-    text-align: center;
-    background-color: rgb(51, 85, 0);
-    width: 300px;
-    font-size: 15px;
-    color: white;
-    font-weight: 400;
-    border: none;
-    border-radius: 8px;
-    transition: 0.2s;
+#urgencybtn{
+padding:10px;
+margin-top:20px;
+text-align:center;
+background-color:rgb(51,85,0);
+width:300px;
+font-size:15px;
+color:white;
+font-weight:400;
+border:none;
+border-radius:8px;
+transition:0.2s;
+align-self:center;
 }
 
-#urgencybtn:hover {
-    background-color: rgb(102, 170, 1);;
+#urgencybtn:hover{
+background-color:rgb(102,170,1);
 }
-
-/* ------------- CALENDARIO --------------- */
 
 .controles{
 display:flex;
 gap:15px;
 margin-bottom:20px;
+flex-wrap:wrap;
 }
 
 .calendario{
@@ -462,6 +443,7 @@ display:grid;
 grid-template-columns:repeat(7,1fr);
 gap:6px;
 max-width:600px;
+width:100%;
 }
 
 .dia{
@@ -488,12 +470,21 @@ border:none;
 
 .statusTurno{
 margin-bottom:15px;
-padding:10px;
-background:#ffffff;
+padding:12px;
 border-radius:6px;
-border:1px solid #ccc;
 font-weight:bold;
 max-width:600px;
+font-size:16px;
+}
+
+.statusTrabalho{
+background:#2e7d32;
+color:white;
+}
+
+.statusFolga{
+background:#616161;
+color:white;
 }
 
 .legenda{
@@ -501,6 +492,7 @@ display:flex;
 gap:20px;
 margin-top:15px;
 align-items:center;
+flex-wrap:wrap;
 }
 
 .legenda-item{
@@ -526,145 +518,158 @@ background:#bdbdbd;
 }
 
 .cor.hoje{
-background:#green;
+background:green;
 }
 
-.statusTurno{
-margin-bottom:15px;
-padding:12px;
-border-radius:6px;
-font-weight:bold;
-max-width:600px;
-font-size:16px;
+#calendar h1{
+padding:20px;
+font-size:50px;
+font-weight:400;
+margin-left:35px;
 }
 
-.statusTrabalho{
-background:#2e7d32;
-color:white;
+#calendar p{
+padding:10px;
+margin-left:50px;
+max-width:700px;
 }
 
-.statusFolga{
-background:#616161;
-color:white;
+#calendarios{
+display:flex;
+justify-content:center;
+flex-direction:row;
+gap:40px;
+padding:20px;
+flex-wrap:wrap;
 }
 
-.painelTurno{
-max-width:600px;
-margin-bottom:20px;
+#turncalendar{
+border-radius:8px;
+padding:20px;
+width:650px;
+max-width:100%;
+box-shadow:rgba(0,0,0,0.25)0px 54px 55px,rgba(0,0,0,0.12)0px -12px 30px,rgba(0,0,0,0.12)0px 4px 6px,rgba(0,0,0,0.17)0px 12px 13px,rgba(0,0,0,0.09)0px -3px 5px;
 }
 
-.dataHoje{
-font-size:14px;
-margin-bottom:6px;
-color:#555;
+#calendar{
+padding:50px;
 }
-
-.statusTurno{
-padding:12px;
-border-radius:6px;
-font-weight:bold;
-font-size:16px;
-}
-
-.statusTrabalho{
-background:#2e7d32;
-color:white;
-}
-
-.statusFolga{
-background:#616161;
-color:white;
-}
-
-#calendar h1 {
-    padding: 20px;
-    font-size: 50px;
-    font-weight: 400;
-    margin-left: 35px;
-}
-
-#calendar p {
-    padding: 10px;
-    margin-left: 50px;
-    width: 700px;
-}
-
-#calendarios {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 600px;
-    padding: 20px;
-}
-
-#turncalendar {
-    border: none;
-    border-radius: 8px;
-    padding: 20px;
-    width: 650px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-#calendar {
-    padding: 50px;
-}
-
-/* -------------- CLIMA ----------------- */
 
 #painelClima{
-
 width:500px;
+max-width:100%;
 padding:10px;
-
-background-color: #d1d1d1;
-
+background-color:#d1d1d1;
 border-radius:10px;
-
-border: 3px solid black;
-
-font-family:Arial;
-
-       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+border:3px solid black;
+box-shadow:rgba(0,0,0,0.25)0px 54px 55px,rgba(0,0,0,0.12)0px -12px 30px,rgba(0,0,0,0.12)0px 4px 6px,rgba(0,0,0,0.17)0px 12px 13px,rgba(0,0,0,0.09)0px -3px 5px;
 }
 
 #climaAtual{
-
 margin-bottom:10px;
-background-color: rgb(230, 230, 230);
-border: none;
-font-weight: 600;
-font-size: 20px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-       border-radius: 8px;
+background-color:rgb(230,230,230);
+font-weight:600;
+font-size:20px;
+box-shadow:rgba(0,0,0,0.24)0px 3px 8px;
+border-radius:8px;
+padding:10px;
 }
 
 #previsao{
-
 display:flex;
 flex-direction:column;
 gap:5px;
-
-background-color: rgb(243, 47, 47);
-border: none;
+background-color:rgb(243,47,47);
 font-size:20px;
-font-weight: 600;
-border-radius: 8px;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+font-weight:600;
+border-radius:8px;
+box-shadow:rgba(0,0,0,0.24)0px 3px 8px;
+padding:10px;
+}
+
+footer{
+background-color:#0f0f14;
+padding:20px;
+letter-spacing:2px;
+text-align:center;
+font-weight:600;
+color:white;
+}
+
+footer span{
+color:green;
+}
+
+@media(max-width:900px){
+
+#homeall{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+#gvsall{
+flex-direction:column;
+text-align:center;
+}
+
+#emergencyarea{
+flex-direction:column;
+align-items:center;
+}
+
+#emelists{
+flex-direction:column;
+}
+
+#calendar h1{
+font-size:35px;
+margin-left:0;
+text-align:center;
+}
+
+#calendar p{
+margin-left:0;
+text-align:center;
+}
+
+#calendarios{
+flex-direction:column;
+align-items:center;
+}
 
 }
 
-footer {
-  background-color: #0f0f14;
-  padding: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-  font-weight: 600;
-  color: WHITE;
+@media(max-width:600px){
+
+#navlinks{
+gap:12px;
+font-size:12px;
 }
 
-footer span {
-    color: green;
+#homegrid{
+width:100%;
+max-width:300px;
+}
+
+#gvslogo{
+font-size:60px;
+}
+
+#gvstitle{
+font-size:24px;
+}
+
+#gvsbutton{
+width:100%;
+}
+
+.gvsitem{
+padding:40px;
+}
+
+#emergencytitle h1{
+font-size:30px;
+}
+
 }
